@@ -1,0 +1,46 @@
+{
+  "name": "name",
+  "version": "0.0.0",
+  "license": "MIT",
+  "description": "description",
+  "main": "lib/index.js",
+  "scripts": {
+    "watch": "nodemon --exec \"npm run test\"",
+    "install-hooks": "cp hooks/* .git/hooks/",
+    "jshint": "find lib -name '*.js' | xargs jshint -c .jshintrc",
+    "jscs": "jscs --config .jscsrc lib/",
+    "test": "npm run npm run test-coverage && npm run jshint && npm run jscs",
+    "test-coverage": "istanbul cover _mocha --report lcovonly test/test-*.js",
+    "coveralls": "cat coverage/lcov.info | coveralls"
+  },
+  "author": {
+    "name": "name",
+    "email": "email"
+  },
+  "contributors": [
+    {
+      "name": "name",
+      "email": "email"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:username/reponame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/reponame/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^1.2.1",
+    "jshint": "~2.5.6",
+    "jscs": "~1.7.1",
+    "istanbul": "~0.3.2",
+    "mocha": "~1.21.4",
+    "mocha-lcov-reporter": "0.0.1",
+    "coveralls": "~2.11.2",
+    "chai": "~1.9.2",
+    "sinon": "~1.10.3"
+  },
+  "dependencies": {
+  }
+}
