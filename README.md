@@ -17,7 +17,7 @@ console.log('foo');
 ```
 
 
-[0]: https://travis-ci.org/ghusername/reponame.svg?branch=master
+[0]: https://img.shields.io/travis/username/reponame.svg
 [1]: https://travis-ci.org/ghusername/reponame
 [2]: https://img.shields.io/coveralls/ghusername/reponame.svg
 [3]: https://coveralls.io/r/ghusername/reponame
