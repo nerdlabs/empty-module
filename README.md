@@ -22,4 +22,4 @@ console.log('foo');
 [2]: https://img.shields.io/coveralls/ghusername/reponame.svg
 [3]: https://coveralls.io/r/ghusername/reponame
 [4]: http://ghusername.github.io/reponame/docs/
-[5]: http://visionmedia.github.io/mocha/
+[5]: http://mochajs.org/
